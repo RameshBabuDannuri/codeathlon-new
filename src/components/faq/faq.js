@@ -39,9 +39,9 @@ class Faq extends Component {
     return (
       <section>
         <div className="container-fluid bg-light">
-          <div className="row  m-5">
+          <div className="row  m-5" id="faq">
             <div className="col-lg text-center">
-              <h1>Frequently Asked Questions</h1>
+              <h3 className="text-muted">Frequently Asked Questions</h3>
             </div>
           </div>
           <div className="row text-white text-left">

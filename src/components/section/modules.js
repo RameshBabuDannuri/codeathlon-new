@@ -17,8 +17,8 @@ class Module extends Component {
               </p>
             </div>
           </div>
-          <div className="row">
-            <div className="col-sm-4 p-4" style={ulStyle}>
+          <div className="row ml-5 mr-5">
+            <div className="col-sm-4 p-4 zoom" style={ulStyle}>
               <h5 className="text-primary">
                 Distributed Systems - Introductory Course
               </h5>

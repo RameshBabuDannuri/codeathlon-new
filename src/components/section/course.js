@@ -5,7 +5,7 @@ class Course extends Component {
     const { id, name, discription, topics } = this.props.course;
     return (
       <React.Fragment>
-        <div className=" card border-0 card-body h-100" key={id}>
+        <div className=" card border-0 card-body h-100 zoom m-2" key={id}>
           <h5 className="text-primary">
             Module-{id} {name}
           </h5>
