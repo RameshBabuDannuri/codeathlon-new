@@ -10,7 +10,7 @@ class Footer extends Component {
   state = {};
   render() {
     return (
-      <footer class="px-5" style={{ backgroundColor: "#1F2833" }}>
+      <footer class="px-5" style={{ backgroundColor: "#001530" }}>
         <div class="container-fluid">
           <div class="row text-light py-4">
             <div class="col-sm-6">

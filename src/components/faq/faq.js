@@ -40,21 +40,21 @@ class Faq extends Component {
       <section>
         <div className="container-fluid bg-light">
           <div className="row  m-5" id="faq">
-            <div className="col-lg text-center">
-              <h3 className="text-muted">Frequently Asked Questions</h3>
+            <div className="col-lg mt-5 text-center">
+              <h3 className="display-5">Frequently Asked Questions</h3>
             </div>
           </div>
-          <div className="row text-white text-left">
+          <div className="row text-white m-5  text-left">
             {this.state.faqlist.map(faq => (
               <table className="table">
-                <thead className="thead-dark">
+                <thead className="thead-light">
                   <tr>
                     <th>{faq.question}</th>
                   </tr>
                 </thead>
                 <tbody className="bg-light">
                   <tr>
-                    <td className="bg-light">{faq.answer}</td>
+                    <td className="bg-light ml-5">{faq.answer}</td>
                   </tr>
                 </tbody>
               </table>

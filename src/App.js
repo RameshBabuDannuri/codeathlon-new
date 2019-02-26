@@ -11,7 +11,7 @@ import Footer from "./components/footer/footer";
 class App extends Component {
   render() {
     return (
-      <section className="App container-fluid">
+      <React.Fragment>
         <Toolbar logo="#" brandName="Codeathlon - Distributed Systems Course" />
         <Header
           header="Distributed System Courses"
@@ -22,7 +22,7 @@ class App extends Component {
         <Pricing />
         <Faq />
         <Footer />
-      </section>
+      </React.Fragment>
     );
   }
 }

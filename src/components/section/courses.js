@@ -350,54 +350,60 @@ class Courses extends Component {
     };
   }
   render() {
+    const HeaderDiv = {
+      textAlign: "center",
+      padding: "30px"
+    };
+    const courseHeaderStyle = {
+      color: "#001530"
+    };
     return (
       <section>
         <div className="container-fluid">
-          <div className="row m-1">
+          <div className="row mt-2 bg-light">
             <div
-              className="col-sm-12 text-center m-3 py-5"
+              className="col-lg-12"
+              style={HeaderDiv}
               id="syllabusIntroductoryCourse"
             >
-              <h3>Distributed Systems - Introductory Course</h3>
-              <p>WHAT WILL YOU LEARN</p>
+              <h3 className="display-6" style={courseHeaderStyle}>
+                Distributed Systems - Introductory Course
+              </h3>
+              <p style={courseHeaderStyle}>WHAT WILL YOU LEARN</p>
             </div>
-          </div>
-
-          <div className="row">
             {this.state.course1.map(c => (
               <div className="col-sm-4  mt-3 py-3">
                 <Course key={c.id} courseName="course1" course={c} />
               </div>
             ))}
           </div>
-          <div className="row m-1">
+          <div className="row mt-2">
             <div
-              className="col-sm-12 text-center m-3 py-5"
+              className="col-lg-12 text-center m-3 py-5"
               id="syllabusIntermediateCourse"
             >
-              <h3>Distributed Systems - Intermediate Course</h3>
+              <h3 style={courseHeaderStyle}>
+                Distributed Systems - Intermediate Course
+              </h3>
               <p>WHAT WILL YOU LEARN</p>
             </div>
-          </div>
 
-          <div className="row">
             {this.state.course3.map(c => (
               <div className="col-sm-4  mt-3 py-3">
                 <Course key={c.id} courseName="course1" course={c} />
               </div>
             ))}
           </div>
-          <div className="row m-1">
+          <div className="row mt-3 bg-light">
             <div
               className="col-sm-12 text-center m-3 py-5"
               id="syllabusAdvancedCourse"
             >
-              <h3>Distributed Systems - Advanced Course</h3>
+              <h3 style={courseHeaderStyle}>
+                Distributed Systems - Advanced Course
+              </h3>
               <p>WHAT WILL YOU LEARN</p>
             </div>
-          </div>
-
-          <div className="row">
             {this.state.course3.map(c => (
               <div className="col-sm-4  mt-3 py-3">
                 <Course key={c.id} courseName="course1" course={c} />

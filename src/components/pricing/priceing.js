@@ -1,20 +1,5 @@
 import React, { Component } from "react";
-const cardListStyle = {
-  color: "#45A29E"
-};
-const cardStyle = {
-  background: "#1F2833",
-  color: "#45A29E",
-  border: "none",
-  marginTop: "20px"
-};
-const iconStyle = {
-  fontSize: "40px",
-  color: "#FFC700"
-};
-const buttonStyle = {
-  backgroundColor: "#FFC700"
-};
+
 class Pricing extends Component {
   state = {
     basicCoursePrice: "9,999",
@@ -23,6 +8,31 @@ class Pricing extends Component {
   };
 
   render() {
+    const cardListStyle = {
+      color: "white"
+    };
+    const cardStyle = {
+      background: "#001530",
+      border: "none",
+      marginTop: "20px"
+    };
+    const iconStyle = {
+      fontSize: "40px",
+      color: "#FFC700"
+    };
+    const buttonStyle = {
+      backgroundColor: "#FFC700"
+    };
+    const headerStyle = {
+      color: "#FFC700",
+      fontWheit: "bold",
+      marginTop: "20px",
+      marginBottom: "13px"
+    };
+    const dateStyle = {
+      color: "red",
+      marginTop: "50px"
+    };
     return (
       <section className="bg-light text-center p-5">
         <div className="container-fluid">
@@ -38,13 +48,10 @@ class Pricing extends Component {
           </div>
           <div className="row align-items-center">
             <div className="col-lg-4">
-              <div
-                className="card card-1 py-1 my-1 mx-auto zoom"
-                style={cardStyle}
-              >
+              <div className="card card-1 zoom" style={cardStyle}>
                 <div className="card-body">
-                  <i class="fas fa-chess-pawn  py-2" style={iconStyle} />
-                  <h5 className="text-uppercase font-weight-bold text-light mb-3">
+                  <i class="fas fa-chess-pawn" style={iconStyle} />
+                  <h5 className="text-uppercase" style={headerStyle}>
                     Introductory Course
                   </h5>
                   <ul className="list-unstyled">
@@ -67,15 +74,11 @@ class Pricing extends Component {
                       System Design & Project
                     </li>
                   </ul>
-                  <h5 className="font-weight-bold text-light mt-5">
-                    Start 30th April
-                  </h5>
+                  <h5 style={dateStyle}>Start 30th April</h5>
                   <a
                     href="#"
-                    class="btn p-2  font-weight-bold text-light"
+                    className="btn p-2  font-weight-bold text-light"
                     style={buttonStyle}
-                    onMouseEnter={this.toggleHover}
-                    onMouseLeave={this.toggleHover}
                   >
                     sign-up for just {this.state.basicCoursePrice} /-
                   </a>
@@ -83,13 +86,10 @@ class Pricing extends Component {
               </div>
             </div>
             <div className="col-lg-4">
-              <div
-                className="card card-2  py-1 my-1 mx-auto zoom"
-                style={cardStyle}
-              >
+              <div className="card card-2 zoom" style={cardStyle}>
                 <div className="card-body">
                   <i class="fas fa-chess-knight py-2" style={iconStyle} />
-                  <h5 className="text-uppercase font-weight-bold text-light mb-4">
+                  <h5 className="text-uppercase" style={headerStyle}>
                     Intermediate Course
                   </h5>
 
@@ -122,9 +122,7 @@ class Pricing extends Component {
                       Stream Processing
                     </li>
                   </ul>
-                  <h5 className="font-weight-bold text-light mt-5">
-                    Start 15th May
-                  </h5>
+                  <h5 style={dateStyle}>Start 15th May</h5>
                   <a
                     href="#"
                     className="btn  p-2 font-weight-bold text-light"
@@ -136,13 +134,10 @@ class Pricing extends Component {
               </div>
             </div>
             <div className="col-lg-4">
-              <div
-                className="card card-3 border-0 py-1 my-1 mx-auto zoom"
-                style={cardStyle}
-              >
+              <div className="card card-3 zoom" style={cardStyle}>
                 <div className="card-body">
-                  <i class="fas fa-chess-queen py-2" style={iconStyle} />
-                  <h5 className="text-uppercase font-weight-bold text-light mb-4">
+                  <i class="fas fa-chess-queen" style={iconStyle} />
+                  <h5 className="text-uppercase" style={headerStyle}>
                     Advanced Course
                   </h5>
 
@@ -184,23 +179,17 @@ class Pricing extends Component {
                       Distributed Locking
                     </li>
                   </ul>
-                  <h5 className="font-weight-bold text-light mt-5">
-                    Start 30th May
-                  </h5>
+                  <h5 style={dateStyle}>Start 30th May</h5>
                   <a
                     href="#"
                     className="btn p-2 font-weight-bold price-card-button text-light "
                     style={buttonStyle}
                   >
-                    Sign-up for just {this.state.interimediateCoursePrice} /-
+                    Sign-up for just {this.state.AdvanceCoursePrice} /-
                   </a>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="my-5">
-            <h2 className="text-muted mb-4">Thanks for being with us!</h2>
-            <i class="fas fa-mug-hot fa-3x" style={iconStyle} />
           </div>
         </div>
       </section>
