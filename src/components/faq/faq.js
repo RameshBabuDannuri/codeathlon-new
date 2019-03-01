@@ -46,7 +46,7 @@ class Faq extends Component {
           </div>
           <div className="row text-white m-5  text-left">
             {this.state.faqlist.map(faq => (
-              <table className="table">
+              <table className="table" key={faq.id}>
                 <thead className="thead-light">
                   <tr>
                     <th>{faq.question}</th>

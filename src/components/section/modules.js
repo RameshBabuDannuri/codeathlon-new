@@ -4,43 +4,36 @@ import "./module.css";
 class Module extends Component {
   render() {
     const couser1style = {
-      color: "#FFC700"
+      color: "#017BFF"
     };
     const course2tyle = {
-      color: "#FFC700"
+      color: "#017BFF"
     };
     const course3tyle = {
-      color: "#FFC700"
+      color: "#017BFF"
     };
     const headerStyle = {
-      color: "#FFC700"
-    };
-    const ulStyle = {
-      textAlign: "left"
+      color: "#017BFF"
     };
     const liStyle = {
-      color: "white"
+      color: "black"
     };
     const btnStyle = {
-      backgroundColor: "#FFC700",
+      backgroundColor: "#017BFF",
       color: "white"
     };
     const courseIconStyle = {
-      fontSize: "40px",
-      color: "#FFC700",
-      paddingBottom: "30px"
+      fontSize: "60px",
+      color: "black",
+      paddingBottom: "25px"
     };
     const iconStyle = {
-      color: "#FFC700",
-      size: "13px",
-      margin: "5px"
+      color: "#017BFF",
+      marginRight: "3px"
     };
     return (
       <section>
-        <div
-          className="container-fluid mt-3"
-          style={{ backgroundColor: "#001530" }}
-        >
+        <div className="container-fluid mt-5">
           <div className="row">
             <div className="col-lg-12 text-center m-1 py-4" id="courseModule">
               <h5 className="text-bold" style={headerStyle}>
@@ -58,7 +51,7 @@ class Module extends Component {
           <div className="row ml-5 mr-5">
             <div className="col-sm-4 course1 p-4 zoom" style={couser1style}>
               <div className="text-lg-center">
-                <i class="fas fa-chess-pawn" style={courseIconStyle} />
+                <i className="fas fa-chess-pawn" style={courseIconStyle} />
               </div>
 
               <h5>Distributed Systems - Introductory Course</h5>
@@ -69,19 +62,18 @@ class Module extends Component {
               </p>
               <ul className="list-unstyled">
                 <li style={liStyle}>
-                  <i class="far fa-hand-point-right" style={iconStyle} />
-
+                  <i className="far fa-hand-point-right" style={iconStyle} />{" "}
                   <strong>6 Modules, each module 4 hours each</strong>
                 </li>
                 <li style={liStyle}>
-                  <i class="far fa-hand-point-right" style={iconStyle} />{" "}
+                  <i className="far fa-hand-point-right" style={iconStyle} />{" "}
                   <strong>
                     Case Study in every module to understand real life
                     application
                   </strong>
                 </li>
                 <li style={liStyle}>
-                  <i class="far fa-hand-point-right" style={iconStyle} />{" "}
+                  <i className="far fa-hand-point-right" style={iconStyle} />{" "}
                   <strong>Hands on exercise in each module</strong>
                 </li>
               </ul>
@@ -95,7 +87,7 @@ class Module extends Component {
             </div>
             <div className="col-sm-4 course2 p-4 zoom" style={course2tyle}>
               <div className="text-lg-center">
-                <i class="fas fa-chess-knight" style={courseIconStyle} />
+                <i className="fas fa-chess-knight" style={courseIconStyle} />
               </div>
               <h5 style={headerStyle}>
                 Distributed Systems - Intermediate Course
@@ -107,18 +99,18 @@ class Module extends Component {
               </p>
               <ul className="list-unstyled">
                 <li style={liStyle}>
-                  <i class="far fa-hand-point-right" style={iconStyle} />{" "}
+                  <i className="far fa-hand-point-right" style={iconStyle} />{" "}
                   <strong>9 Modules, each module 4 hours each</strong>
                 </li>
                 <li style={liStyle}>
-                  <i class="far fa-hand-point-right" style={iconStyle} />{" "}
+                  <i className="far fa-hand-point-right" style={iconStyle} />{" "}
                   <strong>
                     Case Study in every module to understand real life
                     application
                   </strong>
                 </li>
                 <li style={liStyle}>
-                  <i class="far fa-hand-point-right" style={iconStyle} />{" "}
+                  <i className="far fa-hand-point-right" style={iconStyle} />{" "}
                   <strong>Hands on exercise in each module</strong>
                 </li>
               </ul>
@@ -132,7 +124,7 @@ class Module extends Component {
             </div>
             <div className="col-sm-4  course3 p-4 zoom" style={course3tyle}>
               <div className="text-lg-center">
-                <i class="fas fa-chess-queen" style={courseIconStyle} />
+                <i className="fas fa-chess-queen" style={courseIconStyle} />
               </div>
               <h5>Distributed Systems - Advanced Course</h5>
               <p className="text-muted">
@@ -142,18 +134,18 @@ class Module extends Component {
               </p>
               <ul className="list-unstyled">
                 <li style={liStyle}>
-                  <i class="far fa-hand-point-right" style={iconStyle} />{" "}
+                  <i className="far fa-hand-point-right" style={iconStyle} />{" "}
                   <strong>12 Modules, each module 4 hours each</strong>
                 </li>
                 <li style={liStyle}>
-                  <i class="far fa-hand-point-right" style={iconStyle} />{" "}
+                  <i className="far fa-hand-point-right" style={iconStyle} />{" "}
                   <strong>
                     Case Study in every module to understand real life
                     application
                   </strong>
                 </li>
                 <li style={liStyle}>
-                  <i class="far fa-hand-point-right" style={iconStyle} />{" "}
+                  <i className="far fa-hand-point-right" style={iconStyle} />{" "}
                   <strong>Hands on exercise in each module</strong>
                 </li>
               </ul>

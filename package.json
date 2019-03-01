@@ -30,5 +30,17 @@
   ],
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.7.2"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RameshBabuDannuri/codeathlon-new.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RameshBabuDannuri/codeathlon-new/issues"
+  },
+  "homepage": "https://github.com/RameshBabuDannuri/codeathlon-new#readme"
 }

@@ -1,28 +1,27 @@
 import React from "react";
 import "./header.css";
-import distsys from "../../resources/images/distsys.png";
-import distributed from "../../resources/images/distributed.png";
-const imgstyle = {
-  width: "600px",
-  height: "auto",
-  marginLeft: "30px"
+const image = {
+  height: "100vh",
+  minWidth: "90vh",
+  width: "inherit"
 };
 const Header = props => {
   return (
-    <section>
-      <div className="conatiner-fluid">
-        <div className="hero-image" style={{ backgroundColor: "#001530" }}>
-          <div
-            className="hero-text ml-3"
-            style={{ textAlign: "left", paddingTop: "2em" }}
+    <div className="conatiner-fluid">
+      <div className="row">
+        <div className="col-sm-5 text-left headerDiv pl-5">
+          <h2
+            className="banner-heading headerH1 text-dark"
+            style={{ paddingTop: "200px" }}
           >
-            <h2 className="banner-heading display-4">{props.header}</h2>
-            <p className="banner-paragraph">{props.paragraph}</p>
-            <button className="btn btn-warning text-light">Sign up</button>
-          </div>
+            {props.header}
+          </h2>
+          <p className="banner-paragraph">{props.paragraph}</p>
+          <button className="btn btn-primary">Sign up</button>
         </div>
+        <div className="col-sm-6 header-image ml-auto" style={image} />
       </div>
-    </section>
+    </div>
   );
 };
 export default Header;

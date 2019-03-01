@@ -9,36 +9,33 @@ class Pricing extends Component {
 
   render() {
     const cardListStyle = {
-      color: "white"
+      color: "black"
     };
     const cardStyle = {
-      background: "#001530",
       border: "none",
       marginTop: "20px"
     };
     const iconStyle = {
-      fontSize: "40px",
-      color: "#FFC700"
+      fontSize: "30px"
     };
     const buttonStyle = {
-      backgroundColor: "#FFC700"
+      backgroundColor: "#017BFF"
     };
     const headerStyle = {
-      color: "#FFC700",
       fontWheit: "bold",
       marginTop: "20px",
       marginBottom: "13px"
     };
     const dateStyle = {
-      color: "red",
-      marginTop: "50px"
+      fontWeight: "bold",
+      marginBottom: "Auto"
     };
     return (
-      <section className="bg-light text-center p-5">
+      <section className="text-center p-5">
         <div className="container-fluid">
-          <div className="row text-muted text-center">
-            <div className="col m-4">
-              <h1 className="display-4 mb-4">Let's get started</h1>
+          <div className="row text-muted">
+            <div className="col-sm-12 m-4" id="coursePrice">
+              <h3 className="mb-4">Let's get started</h3>
               <div className="underline-dark mb-4" />
               <p className="lead">
                 Everything you need to start a wildy profitable online beat
@@ -46,9 +43,9 @@ class Pricing extends Component {
               </p>
             </div>
           </div>
-          <div className="row align-items-center">
-            <div className="col-lg-4">
-              <div className="card card-1 zoom" style={cardStyle}>
+          <div className="row card-group">
+            <div className="col-sm-4">
+              <div className="card card-1 zoom " style={cardStyle}>
                 <div className="card-body">
                   <i class="fas fa-chess-pawn" style={iconStyle} />
                   <h5 className="text-uppercase" style={headerStyle}>
@@ -85,10 +82,10 @@ class Pricing extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-sm-4">
               <div className="card card-2 zoom" style={cardStyle}>
                 <div className="card-body">
-                  <i class="fas fa-chess-knight py-2" style={iconStyle} />
+                  <i className="fas fa-chess-knight" style={iconStyle} />
                   <h5 className="text-uppercase" style={headerStyle}>
                     Intermediate Course
                   </h5>
@@ -133,10 +130,10 @@ class Pricing extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
-              <div className="card card-3 zoom" style={cardStyle}>
+            <div className="col-sm-4">
+              <div className="card card-3 zoom " style={cardStyle}>
                 <div className="card-body">
-                  <i class="fas fa-chess-queen" style={iconStyle} />
+                  <i className="fas fa-chess-queen" style={iconStyle} />
                   <h5 className="text-uppercase" style={headerStyle}>
                     Advanced Course
                   </h5>

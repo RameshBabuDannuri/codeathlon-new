@@ -352,7 +352,7 @@ class Courses extends Component {
   render() {
     const HeaderDiv = {
       textAlign: "center",
-      padding: "30px"
+      padding: "40px"
     };
     const courseHeaderStyle = {
       color: "#001530"
@@ -361,25 +361,27 @@ class Courses extends Component {
       <section>
         <div className="container-fluid">
           <div className="row mt-2 bg-light">
-            <div
-              className="col-lg-12"
-              style={HeaderDiv}
-              id="syllabusIntroductoryCourse"
-            >
-              <h3 className="display-6" style={courseHeaderStyle}>
-                Distributed Systems - Introductory Course
-              </h3>
-              <p style={courseHeaderStyle}>WHAT WILL YOU LEARN</p>
-            </div>
-            {this.state.course1.map(c => (
-              <div className="col-sm-4  mt-3 py-3">
-                <Course key={c.id} courseName="course1" course={c} />
+            <div className="row">
+              <div
+                className="col-12"
+                style={HeaderDiv}
+                id="syllabusIntroductoryCourse"
+              >
+                <h3 className="display-6" style={courseHeaderStyle}>
+                  Distributed Systems - Introductory Course
+                </h3>
+                <p style={courseHeaderStyle}>WHAT WILL YOU LEARN</p>
               </div>
-            ))}
+              {this.state.course1.map(c => (
+                <div className="col-sm-4  mt-3 py-3" key={c.id}>
+                  <Course key={c.id} courseName="course1" course={c} />
+                </div>
+              ))}
+            </div>
           </div>
           <div className="row mt-2">
             <div
-              className="col-lg-12 text-center m-3 py-5"
+              className="col-lg-12 text-center mt-3 py-5"
               id="syllabusIntermediateCourse"
             >
               <h3 style={courseHeaderStyle}>
@@ -388,7 +390,7 @@ class Courses extends Component {
               <p>WHAT WILL YOU LEARN</p>
             </div>
 
-            {this.state.course3.map(c => (
+            {this.state.course2.map(c => (
               <div className="col-sm-4  mt-3 py-3">
                 <Course key={c.id} courseName="course1" course={c} />
               </div>
